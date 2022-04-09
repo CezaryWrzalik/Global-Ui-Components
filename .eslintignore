@@ -1,0 +1,11 @@
+artifacts/
+App.js
+get-next-version.js
+get-version.js
+commitlint.config.js
+graphql-schema.json
+src/types/graphql/
+tsconfig.json
+docs/
+README.md
+CHANGELOG.md

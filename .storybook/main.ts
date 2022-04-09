@@ -1,0 +1,40 @@
+const path = require('path');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+
+module.exports = {
+    stories: [
+        '../src/**/*.stories.mdx',
+        '../src/**/*.stories.@(js|jsx|ts|tsx)',
+    ],
+    webpackFinal: (config) => {
+        // Default rule for images /\.(svg|ico|jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|cur|ani|pdf)(\?.*)?$/
+        const fileLoaderRule = config.module.rules.find(
+            (rule) => rule.test && rule.test.test('.svg'),
+        );
+        fileLoaderRule.exclude = /\.svg$/;
+
+        config.module.rules.push({
+            test: /\.svg$/,
+            enforce: 'pre',
+            loader: require.resolve('@svgr/webpack'),
+        });
+
+        config.resolve.plugins = [
+            new TsconfigPathsPlugin({
+                configFile: path.resolve(__dirname, '../tsconfig.json'),
+            }),
+        ];
+
+        return config;
+    },
+    addons: [
+        '@storybook/addon-links',
+        '@storybook/addon-essentials',
+        'storybook-addon-styled-component-theme/dist/preset',
+    ],
+    /* TODO: temporary solution, link to issue: https://github.com/styleguidist/react-docgen-typescript/issues/356 */
+    typescript: {
+        check: true,
+        reactDocgen: 'none',
+    },
+};
