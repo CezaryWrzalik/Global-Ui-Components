@@ -18,7 +18,8 @@
     "paths": {
       "@utils/*": ["src/utils/*"],
       "@shared/*": ["src/shared/*"],
-  },
+      "@@types/*": ["src/types/*"],
+    }
   },
   "exclude": ["node_modules", "__tests__/**/*-test.ts"],
   "include": ["src"]

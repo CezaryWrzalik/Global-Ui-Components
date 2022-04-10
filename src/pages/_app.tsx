@@ -5,6 +5,7 @@ import { Theme } from "../types/commonTypes";
 import themeVariant from "../utils/themeVariant";
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
+
   return (
     <ThemeProvider theme={themeVariant[Theme.DEFAULT]}>
       <GlobalStyled />
