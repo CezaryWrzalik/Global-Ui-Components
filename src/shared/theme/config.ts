@@ -18,6 +18,8 @@ export const global = {
     "24": 24,
     "26": 26,
     "32": 32,
+    "64": 64,
+    "96": 96,
   },
   fontWeight: {
     regular: 400,
@@ -25,6 +27,7 @@ export const global = {
   },
   radius: {
     '5': 5,
+    '50': 50,
   },
   transitions: {
     default: 0.5,

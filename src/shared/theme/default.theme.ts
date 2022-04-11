@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic";
 import { global, palette } from "./config";
 
 const defaultTheme = {
@@ -11,7 +12,12 @@ const defaultTheme = {
       bgPrimary: palette.dark_gray,
       borderPrimary: palette.dynamic,
       textPrimary: palette.dark_white,
-    }
+    },
+    list: {
+      markColor: palette.dynamic,
+    },
+
+    dynamic: palette.dynamic,
 
     // This color 
   },

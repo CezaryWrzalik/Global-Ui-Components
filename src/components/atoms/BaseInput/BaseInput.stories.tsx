@@ -10,10 +10,6 @@ export default {
             control: 'text',
             defaultValue: 'Placeholder',
         },
-        disabled: {
-            control: 'boolean',
-            defaultValue: false,
-        },
     },
 } as ComponentMeta<typeof BaseInput>;
 

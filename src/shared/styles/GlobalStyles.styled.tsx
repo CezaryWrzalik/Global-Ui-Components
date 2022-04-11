@@ -10,7 +10,7 @@ ${normalize};
 }
 
 body{
-	font-family: ${({ theme }) => theme.fontFamily};
+	font-family: ${({ theme }) => theme.fontFamily.primary};
 }
 
 html,body,#__next{
