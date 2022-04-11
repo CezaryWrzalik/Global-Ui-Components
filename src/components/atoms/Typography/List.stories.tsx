@@ -3,7 +3,7 @@ import { Typography } from './Typography';
 import { TypographyProps } from '@@types/Typography';
 
 export default {
-    title: 'Typography/List',
+    title: 'Atoms/Typography/List',
     component: Typography.TextBullet_16,
     description: `DESC`,
     argTypes: {

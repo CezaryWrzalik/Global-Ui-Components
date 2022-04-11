@@ -3,7 +3,7 @@ import { Typography } from './Typography';
 import { TypographyProps } from '@@types/Typography';
 
 export default {
-    title: 'Typography/Body',
+    title: 'Atoms/Typography/Body',
     component: Typography.TextBody_16,
     description: `DESC`,
     argTypes: {

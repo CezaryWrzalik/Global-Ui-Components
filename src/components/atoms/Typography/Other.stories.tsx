@@ -3,7 +3,7 @@ import { Typography } from './Typography';
 import { TypographyProps } from '@@types/Typography';
 
 export default {
-    title: 'Typography/Others',
+    title: 'Atoms/Typography/Others',
     component: Typography.TextDyanmicColor,
     description: `DESC`,
     argTypes: {},

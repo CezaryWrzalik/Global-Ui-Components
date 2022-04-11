@@ -3,7 +3,7 @@ import { Typography } from './Typography';
 import { TypographyProps } from '@@types/Typography';
 
 export default {
-    title: 'Typography/Headers',
+    title: 'Atoms/Typography/Headers',
     component: Typography.TextH1_96,
     description: `DESC`,
     argTypes: {

@@ -3,7 +3,7 @@ import { Typography } from './Typography';
 import { TypographyProps } from '@@types/Typography';
 
 export default {
-    title: 'Typography/Buttons',
+    title: 'Atoms/Typography/Buttons',
     component: Typography.TextButton_16,
     description: `DESC`,
     argTypes: {},
