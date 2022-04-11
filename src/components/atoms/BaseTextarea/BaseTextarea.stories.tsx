@@ -3,7 +3,7 @@ import { templateForComponent } from '@utils/templateForComponent';
 import { BaseTextarea } from './BaseTextarea.styled';
 
 export default {
-    title: 'Form/BaseTextarea',
+    title: 'Atoms/BaseTextarea',
     component: BaseTextarea,
     argTypes: {
         isResize: { control: 'boolean' },

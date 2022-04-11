@@ -1,5 +1,5 @@
 import defaultTheme from '../shared/theme/default.theme';
-import { Theme } from '../types/commonTypes';
+import { Theme } from '../types/CommonTypes';
 
 const themeVariant = {
     [Theme.DEFAULT]: defaultTheme,

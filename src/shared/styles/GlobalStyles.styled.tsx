@@ -1,6 +1,6 @@
 import { normalize } from "styled-normalize";
 import { createGlobalStyle } from "styled-components";
-import { ThemeType } from "../../types/commonTypes";
+import { ThemeType } from "../../types/CommonTypes";
 
 export const GlobalStyled = createGlobalStyle<{ theme: ThemeType }>`
 ${normalize};

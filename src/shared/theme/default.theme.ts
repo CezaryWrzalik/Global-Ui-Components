@@ -16,6 +16,11 @@ const defaultTheme = {
     list: {
       markColor: palette.dynamic,
     },
+    additional: {
+      text: palette.dark_white,
+      error: palette.red_orange,
+      success: palette.dynamic,
+    },
 
     dynamic: palette.dynamic,
 

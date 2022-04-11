@@ -1,11 +1,12 @@
 export const palette = {
-	white: '#ffffff',
-  dark_white: '#DEDEDE',
-  gray: '#434343',
-  dark_gray: '#2D2D2D',
-  black_gray: '#434343',
-  dynamic: '#ED6A5A',
-  black: '#DEDEDE'
+  white: "#ffffff",
+  dark_white: "#DEDEDE",
+  gray: "#434343",
+  dark_gray: "#2D2D2D",
+  black_gray: "#434343",
+  dynamic: "#ED6A5A",
+  black: "#DEDEDE",
+  red_orange: "#FF3131",
 };
 
 export const global = {
@@ -26,8 +27,8 @@ export const global = {
     bold: 700,
   },
   radius: {
-    '5': 5,
-    '50': 50,
+    "5": 5,
+    "50": 50,
   },
   transitions: {
     default: 0.5,
