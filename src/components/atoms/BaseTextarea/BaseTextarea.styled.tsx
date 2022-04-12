@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const BaseTextarea = styled.textarea<{
+export const BaseTextareaWrapper = styled.textarea<{
   isResize?: boolean;
 }>(
   ({ theme: { colors, fontSizes, radius }, isResize }) => css`

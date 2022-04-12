@@ -1,6 +1,6 @@
 import { ComponentMeta } from '@storybook/react';
 import { templateForComponent } from '@utils/templateForComponent';
-import { BaseTextarea } from './BaseTextarea.styled';
+import { BaseTextarea } from './BaseTextarea';
 
 export default {
     title: 'Atoms/BaseTextarea',
