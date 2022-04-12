@@ -1,5 +1,5 @@
 import { breakpoints } from "@shared/constants";
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 
 const commonInputStyles = css(
   ({ theme: { colors, fontSizes, radius } }) => `
@@ -8,7 +8,7 @@ const commonInputStyles = css(
     border: 2px solid ${colors.input.borderPrimary};
     border-radius: ${radius[5]}px;
     background-color: inherit;
-    height: 51px;
+    height: 90%;
     line-height: 1.3;
     outline: none;
     width: 100%;
@@ -21,6 +21,45 @@ const commonInputStyles = css(
     `
 );
 
+const errorBounceAnimation = keyframes`
+    0%{
+      width: 100%;
+      height: 90%;
+    }
+    30%{
+      width: 95%;
+      height: 100%;
+    }
+    50%{
+      width: 100%;
+      height: 90%;
+    } 
+    70%{
+      width: 98%;
+      height: 93%;
+    }
+    80%{
+      width: 100%;
+      height: 90%;
+    }
+    90%{
+      width: 99%;
+      height: 92%;
+    } 
+    100%{
+      width: 100%;
+      height: 90%;
+    } 
+`;
+
+const errorInputStyles = css(
+  ({ theme: { colors } }) => css`
+    border: 2px solid ${colors.input.error};
+    transition: .5s;
+    animation: ${errorBounceAnimation} ease-in-out 1.2s .5s;
+  `
+);
+
 const inputPlaceholder = css(
   ({ theme: { colors } }) => `
   ::placeholder,
@@ -30,9 +69,19 @@ const inputPlaceholder = css(
       `
 );
 
-export const BaseInputElement = styled.input(
-  () => css`
-  ${commonInputStyles}
-  ${inputPlaceholder}
+export const BaseInputWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 100%;
+`;
+
+export const BaseInputElement = styled.input<{ error?: boolean }>(
+  ({ error }) => css`
+    ${commonInputStyles}
+    ${inputPlaceholder}
+
+  ${error && errorInputStyles}
   `
 );

@@ -7,6 +7,7 @@ export const palette = {
   dynamic: "#ED6A5A",
   black: "#DEDEDE",
   red_orange: "#FF3131",
+  yellow: '#dde815'
 };
 
 export const global = {

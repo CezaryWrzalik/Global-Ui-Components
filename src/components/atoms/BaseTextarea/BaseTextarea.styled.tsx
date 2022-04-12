@@ -5,6 +5,7 @@ export const BaseTextarea = styled.textarea<{
 }>(
   ({ theme: { colors, fontSizes, radius }, isResize }) => css`
     border: 2px solid ${colors.input.borderPrimary};
+    background: inherit;
     border-radius: ${radius[5]}px;
     caret-color: ${colors.input.textPrimary};
     color: ${colors.input.textPrimary};
