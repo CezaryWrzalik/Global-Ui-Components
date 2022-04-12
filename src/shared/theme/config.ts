@@ -29,6 +29,7 @@ export const global = {
   },
   radius: {
     "5": 5,
+    "20": 20,
     "50": 50,
   },
   transitions: {

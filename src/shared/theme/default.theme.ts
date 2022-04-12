@@ -3,9 +3,15 @@ import { global, palette } from "./config";
 const defaultTheme = {
   colors: {
     body: palette.dark_gray,
+    button: {
+      textPrimary: palette.white,
+      border: palette.dynamic,
+      bgPrimary: palette.dynamic,
+      textSecondary: palette.dynamic,
+    },
     text: {
       primary: palette.dark_white,
-      secondary: palette.white
+      secondary: palette.white,
     },
     input: {
       bgPrimary: palette.dark_gray,
@@ -22,7 +28,7 @@ const defaultTheme = {
     },
     dynamic: palette.dynamic,
 
-    // This color 
+    // This color
   },
   ...global,
 };
