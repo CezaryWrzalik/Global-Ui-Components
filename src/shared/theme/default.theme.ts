@@ -2,7 +2,13 @@ import { global, palette } from "./config";
 
 const defaultTheme = {
   colors: {
-    body: palette.dark_gray,
+    body: {
+      bgPrimary: palette.dark_gray,
+    },
+    sidebar: {
+      bgPrimary: palette.black_gray,
+      borderPrimary: palette.gray,
+    },
     button: {
       textPrimary: palette.white,
       border: palette.dynamic,
@@ -12,6 +18,8 @@ const defaultTheme = {
     text: {
       primary: palette.dark_white,
       secondary: palette.white,
+      tertiary: palette.light_gray,
+      dynamic: palette.dynamic,
     },
     input: {
       bgPrimary: palette.dark_gray,

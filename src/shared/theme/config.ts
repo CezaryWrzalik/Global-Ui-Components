@@ -1,9 +1,10 @@
 export const palette = {
   white: "#ffffff",
   dark_white: "#DEDEDE",
+  light_gray: "#9D9D9D",
   gray: "#434343",
   dark_gray: "#2D2D2D",
-  black_gray: "#434343",
+  black_gray: "#252525",
   dynamic: "#ED6A5A",
   black: "#DEDEDE",
   red_orange: "#FF3131",
