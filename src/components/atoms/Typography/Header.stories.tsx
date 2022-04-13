@@ -6,12 +6,6 @@ export default {
     title: 'Atoms/Typography/Headers',
     component: Typography.TextH1_96,
     description: `DESC`,
-    argTypes: {
-        bold: {
-            control: 'boolean',
-            defaultValue: false,
-        }
-    }
 } as Meta;
 
 export const TextH1_96 = (args: TypographyProps.Header) => (

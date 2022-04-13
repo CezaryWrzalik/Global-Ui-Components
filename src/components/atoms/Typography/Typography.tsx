@@ -6,8 +6,8 @@ import * as List from "./List.styled";
 import * as Other from "./Other.styled";
 import { TypographyProps } from "@@types/Typography";
 
-export interface BaseHeaderProps extends TypographyProps.Header {
-  bold?: boolean;
+export interface BaseListProps extends TypographyProps.List {
+  marks?: boolean;
 }
 
 //Body
@@ -46,7 +46,7 @@ const TextBullet_20 = (props: TypographyProps.List) => (
   <List.TextBullet_20 {...props} />
 );
 
-const TextBullet_16 = (props: TypographyProps.List) => (
+const TextBullet_16 = (props: BaseListProps) => (
   <List.TextBullet_16 {...props} />
 );
 
